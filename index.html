@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body class="main__body">
+    <!-- Header -->
+    <header class="header">
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo"> <a href="#"> <img src="img/logo.svg" alt=""> </a> </div>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>About us</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Blog</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link" data-scroll>Contact</a></li>
+                </ul>
+                <div class="action">
+                    <div class="action__select">
+                        <div class="labels">
+                            <label class="flag__usa selected" for="flag"><img src="img/flagUSA.svg" alt=""></label>
+                            <label class="flag__ru" for="flag"><img src="img/russia.png" alt=""></label>
+                        </div>
+                        <select name="lang" class="lang">
+                            <option class="en" value="1">EN</option>
+                            <option class="ru" value="2">RU</option>
+                        </select>
+                    </div>
+                    <a href="#" class="action__button btn">Войти</a>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Main Page -->
+    <main>
+        <section id="hero" class="hero">
+    <div class="container">
+        <div class="hero__content">
+            <div class="hero__textbox">
+                <div class="hero__subtitle subtitle">+300 прошедших отбор психологов</div>
+                <div class="hero__title">Сессии с психологом
+                    Онлайн</div>
+                <a href="#" class="hero__button btn">Начать беседу</a>
+            </div>
+            <div class="hero__image">
+                <img src="img/hero__illustration.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="app" class="app">
+    <div class="container">
+        <div class="app__content">
+            <div class="app__video">
+                <div class="app__cover">
+                    <iframe class="app__iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img class="app__video-bg" src="img/video.png" alt="">
+                    <svg class="app__yt" width="74" height="53" viewBox="0 0 74 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M72.128 8.49194C71.2856 5.30789 68.8039 2.80023 65.6528 1.94922C59.9412 0.402832 37.0384 0.402832 37.0384 0.402832C37.0384 0.402832 14.1358 0.402832 8.42406 1.94922C5.27297 2.80036 2.7912 5.30789 1.94888 8.49194C0.418457 14.2632 0.418457 26.3045 0.418457 26.3045C0.418457 26.3045 0.418457 38.3457 1.94888 44.117C2.7912 47.301 5.27297 49.7042 8.42406 50.5552C14.1358 52.1016 37.0384 52.1016 37.0384 52.1016C37.0384 52.1016 59.9411 52.1016 65.6528 50.5552C68.8039 49.7042 71.2856 47.301 72.128 44.117C73.6584 38.3457 73.6584 26.3045 73.6584 26.3045C73.6584 26.3045 73.6584 14.2632 72.128 8.49194ZM29.5479 37.237V15.3719L48.6901 26.3047L29.5479 37.237Z" fill="#212121" fill-opacity="0.8"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="app__block">
+                <div class="app__title">Скачайте бесплатно приложение SPEAK</div>
+                <div class="app__info">
+                    <div class="app__logo">
+                        <img src="img/app__logo.svg" alt="">
+                    </div>
+                    <div class="app__name">
+                        <div class="app__company">Speak</div>
+                        <div class="app__available">онлайн сессии с психологом<br>доступно для iOS и Android</div>
+                    </div>
+                </div>
+                <div class="app__download">
+                    <a href="#" class="app__app-store">
+                        <img src="img/app-store.png" alt="">
+                    </a>
+                    <a href="#" class="app__google-play">
+                        <img src="img/google-play.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="filter" class="filter">
+    <div class="container">
+        <div class="filter__content">
+            <div class="filter__variant">
+                <ul class="list">
+                    <li class="list__item" data-id="winter">Чувства</li>
+                    <li class="list__item" data-id="spring">Одиночество</li>
+                    <li class="list__item" data-id="summer">Вредные привычки</li>
+                    <li class="list__item" data-id="autumn">Отношения</li>
+                    <li class="list__item" data-id="autumn">Работа</li>
+                    <li class="list__item" data-id="autumn">Смыслы</li>
+                    <li class="list__item" data-id="autumn">Отношения с близкими</li>
+                    <li class="list__item active" data-id="all">+ 300 психологов</li>
+                </ul>
+            </div>
+            <div class="slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slider__item feeling">
+                                <div class="slider__image">
+                                    <img src="img/item-1.jpg" alt="Илья Благов">
+                                </div>
+                                <div class="slider__name">Илья Благов</div>
+                                <div class="slider__action">
+                                    <div class="slider__rate">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                    </div>
+                                    <div class="slider__continue">
+                                        <img src="img/slide__arr.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__item loneliness">
+                                <div class="slider__image">
+                                    <img src="img/item-2.jpg" alt="Иванна Есина">
+                                </div>
+                                <div class="slider__name">Иванна Есина</div>
+                                <div class="slider__action">
+                                    <div class="slider__rate">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                    </div>
+                                    <div class="slider__continue">
+                                        <img src="img/slide__arr.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__item bad-habit">
+                                <div class="slider__image">
+                                    <img src="img/item-3.jpg" alt="Артур Островский">
+                                </div>
+                                <div class="slider__name">Артур Островский</div>
+                                <div class="slider__action">
+                                    <div class="slider__rate">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                    </div>
+                                    <div class="slider__continue">
+                                        <img src="img/slide__arr.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__item relations">
+                                <div class="slider__image">
+                                    <img src="img/item-4.jpg" alt="Юля Заграничная">
+                                </div>
+                                <div class="slider__name">Юля Заграничная</div>
+                                <div class="slider__action">
+                                    <div class="slider__rate">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                    </div>
+                                    <div class="slider__continue">
+                                        <img src="img/slide__arr.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider__item relations">
+                                <div class="slider__image">
+                                    <img src="img/item-5.jpg" alt="Андрей Ян">
+                                </div>
+                                <div class="slider__name">Андрей Ян</div>
+                                <div class="slider__action">
+                                    <div class="slider__rate">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.svg" alt="">
+                                        <img src="img/star.zsvg" alt="">
+                                    </div>
+                                    <div class="slider__continue">
+                                        <img src="img/slide__arr.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-pagination">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+        <section id="help" class="help">
+    <div class="container">
+        <div class="help__content">
+            <div class="help__list">
+                <div class="list__title">Поможем вам</div>
+                <ul class="list__container">
+                    <li class="list__unit">
+                        <img src="img/help__check.svg" alt="">
+                        <span>Разрешить причины сложных отношений с партнером</span>
+                    </li>
+                    <li class="list__unit">
+                        <img src="img/help__check.svg" alt="">
+                        <span>Снять или снизить остроту переживаний</span>
+                    </li>
+                    <li class="list__unit">
+                        <img src="img/help__check.svg" alt="">
+                        <span>Справиться с выгоранием на работе и найти мотивацию</span>
+                    </li>
+                    <li class="list__unit">
+                        <img src="img/help__check.svg" alt="">
+                        <span>Понять себя в отношениях с близкими людьми</span>
+                    </li>
+                    <li class="list__unit">
+                        <img src="img/help__check.svg" alt="">
+                        <span>Найти себя и понимать свои желания</span>
+                    </li>
+                    <li class="list__unit">
+                        <img src="img/help__check.svg" alt="">
+                        <span>Исследовать и управлять изменениями в своей жизни</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="help__image">
+                <img src="img/help.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="online" class="online">
+    <div class="container">
+        <div class="online__content">
+            <div class="online__image">
+                <img src="img/online.png" alt="">
+            </div>
+            <div class="online__textbox">
+                <div class="online__title">Преимущества онлайн сессий с психологом</div>
+                <ul class="online__list">
+                    <li class="online__list-item">Занимайтесь где и как удобно</li>
+                    <div class="online__span">Дома или в поездке и в любом часовом поясе</div>
+                    <li class="online__list-item">Меньше забот- больше мотивации</li>
+                    <div class="online__span">Не тратьте время на дорогу и управляйте занятиями в два клика</div>
+                    <li class="online__list-item">Доверяйте себе</li>
+                    <div class="online__span">Выбирайте среди проверенных психологов, которые специаллизируются на ваших запросах</div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="selection" class="selection">
+    <div class="container">
+        <div class="selection__content">
+            <div class="selection__title">Как мы отбираем специалистов?</div>
+            <div class="selection__subtitle">Отбор проходят меньше 10% специаллистов</div>
+            <div class="selection__container">
+                <div class="selection__list">
+                    <div class="selection__list-item">
+                        <div class="selection__list-title">Документы об образовании</div>
+                        <div class="selection__list-subtitle">Обязательно иметь высшее психологическое образование и сертификаты для ведения психотерапии</div>
+                    </div>
+                    <div class="selection__list-item">
+                        <div class="selection__list-title">Опыт частной практики и личной терапии</div>
+                        <div class="selection__list-subtitle">Нужно не менее 3-х лет частной практики, личная терапия и регулярные супервизии</div>
+                    </div>
+                    <div class="selection__list-item">
+                        <div class="selection__list-title">Собеседование с нашим экспертом-ментором</div>
+                        <div class="selection__list-subtitle">Отслеживаются коммуникативные способности, уровень эмпатии, манера и стиль беседы,  проффесиональные компетенции</div>
+                    </div>
+                </div>
+                <div class="selection__image">
+                    <img src="img/selection.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="service" class="service">
+    <div class="container">
+        <div class="service__content">
+            <h1 class="service__title">О сервисе</h1>
+            <div class="service__block">
+                <div class="service__video">
+                    <div class="service__cover">
+                        <iframe class="service__iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img class="service__video-bg" src="img/video.png" alt="">
+                        <svg class="service__yt" width="74" height="53" viewBox="0 0 74 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M72.128 8.49194C71.2856 5.30789 68.8039 2.80023 65.6528 1.94922C59.9412 0.402832 37.0384 0.402832 37.0384 0.402832C37.0384 0.402832 14.1358 0.402832 8.42406 1.94922C5.27297 2.80036 2.7912 5.30789 1.94888 8.49194C0.418457 14.2632 0.418457 26.3045 0.418457 26.3045C0.418457 26.3045 0.418457 38.3457 1.94888 44.117C2.7912 47.301 5.27297 49.7042 8.42406 50.5552C14.1358 52.1016 37.0384 52.1016 37.0384 52.1016C37.0384 52.1016 59.9411 52.1016 65.6528 50.5552C68.8039 49.7042 71.2856 47.301 72.128 44.117C73.6584 38.3457 73.6584 26.3045 73.6584 26.3045C73.6584 26.3045 73.6584 14.2632 72.128 8.49194ZM29.5479 37.237V15.3719L48.6901 26.3047L29.5479 37.237Z" fill="#212121" fill-opacity="0.8"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="service__info">
+                    <div class="service__info-item">
+                        <div class="info-item__title">900 +</div>
+                        <div class="info-item__subtitle">регистраций вчера</div>
+                    </div>
+                    <div class="service__info-item">
+                        <div class="info-item__title">75 000 +</div>
+                        <div class="info-item__subtitle">проведено сессий</div>
+                    </div>
+                    <div class="service__info-item">
+                        <div class="info-item__title">354 +</div>
+                        <div class="info-item__subtitle">психологов</div>
+                    </div>
+                </div>
+            </div>
+            <div class="service__note">
+                <div class="service__note-item">
+                    <div class="note-item__icon"><img src="img/note-1.png" alt=""></div>
+                    <div class="note-item__info">
+                        <div class="note-item__title">Подбор “По позже”</div>
+                        <div class="note-item__subtitle">Подбор с возможностью бронирование сессии на будущее</div>
+                    </div>
+                </div>
+                <div class="service__note-item">
+                    <div class="note-item__icon"><img src="img/note-2.png" alt=""></div>
+                    <div class="note-item__info">
+                        <div class="note-item__title">Подбор “Сейчас”</div>
+                        <div class="note-item__subtitle">Подбор с возможностью начала сессии “здесь и сейчас”</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="step" class="step">
+    <div class="container">
+        <div class="step__content">
+            <h1 class="step__head">Как это устроено</h1>
+            <div class="tabs">
+                <div class="tabs__header">
+                    <div class="tabs__header-item step__number active">1</div>
+                    <div class="tabs__line"></div>
+                    <div class="tabs__header-item step__number">2</div>
+                    <div class="tabs__line"></div>
+                    <div class="tabs__header-item step__number">3</div>
+                    <div class="tabs__line"></div>
+                    <div class="tabs__header-item step__number">4</div>
+                </div>
+            </div>
+            <div class="step__block">
+                <div class="step__piece">
+                    <div class="step__move">
+                        <div class="step__number">1</div>
+                        <div class="step__info">
+                            <h1 class="step__title">Заполните простую анкету</h1>
+                            <p class="step__subtitle">Расскажите, что вас беспокоит и что важно в психологе. </p>
+                        </div>
+                    </div>
+                    <div class="step__move">
+                        <div class="step__number">3</div>
+                        <div class="step__info">
+                            <h1 class="step__title">Выберите способ связи с психологом</h1>
+                            <p class="step__subtitle">49руб/мин по <span>аудио/видео связи</span> 200руб за 24 часа <span>чата + аудио сообщения</span> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="step__image">
+                    <img src="img/step__phone.png" alt="">
+                </div>
+                <div class="step__piece">
+                    <div class="step__move">
+                        <div class="step__number">2</div>
+                        <div class="step__info">
+                            <h1 class="step__title">Выберите психолога</h1>
+                            <p class="step__subtitle">Выберите понравившегося психолога </p>
+                        </div>
+                    </div>
+                    <div class="step__move">
+                        <div class="step__number">4</div>
+                        <div class="step__info">
+                            <h1 class="step__title">Начните общение</h1>
+                            <p class="step__subtitle">Все общение происходит через платформу SPEAK. Вслучае если психолог вам не понравится, вы можете заменить его без дополнительных переплат</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="tabs__content">
+                    <div class="tabs__content-item">
+                        <div class="step__info">
+                            <h1 class="step__title">Заполните простую анкету</h1>
+                            <p class="step__subtitle">Расскажите, что вас беспокоит и что важно в психологе. </p>
+                        </div>
+                    </div>
+                    <div class="tabs__content-item">
+                        <div class="step__info">
+                            <h1 class="step__title">Выберите психолога</h1>
+                            <p class="step__subtitle">Выберите понравившегося психолога </p>
+                        </div>
+                    </div>
+                    <div class="tabs__content-item">
+                        <div class="step__info">
+                            <h1 class="step__title">Выберите способ связи с психологом</h1>
+                            <p class="step__subtitle">49руб/мин по <span>аудио/видео связи</span> 200руб за 24 часа <span>чата + аудио сообщения</span> </p>
+                        </div>
+                    </div>
+                    <div class="tabs__content-item">
+                        <div class="step__info">
+                            <h1 class="step__title">Начните общение</h1>
+                            <p class="step__subtitle">Все общение происходит через платформу SPEAK. Вслучае если психолог вам не понравится, вы можете заменить его без дополнительных переплат</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="step__button">Начать общение</a>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+    
+
+</body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="./js/scripts.min.js"></script>
+
+
+</html>
