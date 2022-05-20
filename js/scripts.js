@@ -1,4 +1,8 @@
 // Custom Scripts
+window.onload = function(){
+    let preload = document.querySelector('.preload');
+    preload.style.display = 'none';
+}
 const usa = document.querySelector('.flag__usa');
 const russia = document.querySelector('.flag__ru');
 const lang = document.querySelector('.lang');

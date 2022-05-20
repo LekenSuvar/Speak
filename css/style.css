@@ -134,6 +134,46 @@ body.locked {
   }
 }
 
+.preload {
+  background-color: #fff;
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+  -webkit-animation: hidePreloader 0.5s;
+          animation: hidePreloader 0.5s;
+}
+
+@-webkit-keyframes hidePreloader {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hidePreloader {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .header {
   position: fixed;
   left: 0;
