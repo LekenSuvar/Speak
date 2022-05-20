@@ -210,3 +210,30 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass, display
 // ТРЕТИЙ аргумент - класс того блока, который будет переключаться.
 // ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
 tabs( '.tabs__header' ,'.tabs__header-item', '.tabs__content-item', 'active')
+const btnMinus = document.querySelector('.favor__minus');
+const btnPlus = document.querySelector('.favor__plus');
+const amount = document.querySelector('.favor__amount');
+const price = document.querySelector('.favor__price');
+const min = document.querySelector('.favor__min');
+
+btnMinus.addEventListener('click', () =>{
+    let saveAmount = Number(amount.textContent);
+    if(saveAmount === 20){
+        return amount.innerHTML = '20';
+    }
+    // let savePrice = Number(price.textContent)
+    let savePrice = saveAmount - 1;
+    amount.innerHTML = String(saveAmount - 1);
+    price.innerHTML = String(savePrice*49);
+});
+btnPlus.addEventListener('click', () =>{
+    let saveAmount = Number(amount.textContent);
+    let savePrice = saveAmount + 1;
+    amount.innerHTML = String(saveAmount + 1);
+    price.innerHTML = String(savePrice*49);
+});
+
+min.addEventListener('click', () =>{
+    amount.innerHTML = '20';
+    price.innerHTML = '980';
+});
