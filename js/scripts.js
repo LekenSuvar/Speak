@@ -2,7 +2,6 @@
 window.onload = function(){
     let preload = document.querySelector('.preload');
     preload.style.opacity = '0';
-    preload.style.display = 'none';
 }
 const usa = document.querySelector('.flag__usa');
 const russia = document.querySelector('.flag__ru');
