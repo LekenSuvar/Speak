@@ -1,6 +1,7 @@
 // Custom Scripts
 window.onload = function(){
     let preload = document.querySelector('.preload');
+    preload.style.opacity = '0';
     preload.style.display = 'none';
 }
 const usa = document.querySelector('.flag__usa');
@@ -144,7 +145,12 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 5,
     spaceBetween: 20,
     centeredSlides: true,
+    initialSlide: 2,
+    preloadImages: false,
 
+
+
+    
     pagination: {
         el: '.swiper-pagination',
         clickable: true
