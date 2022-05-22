@@ -139,7 +139,7 @@ body.locked {
   position: fixed;
   min-height: 100vh;
   min-width: 100vw;
-  font-size: 100px;
+  font-size: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,28 +150,16 @@ body.locked {
       -ms-flex-align: center;
           align-items: center;
   z-index: 999;
-  -webkit-animation: hidePreloader 0.5s;
-          animation: hidePreloader 0.5s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-@-webkit-keyframes hidePreloader {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes hidePreloader {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
+.preload.loaded {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .header {
@@ -186,6 +174,7 @@ body.locked {
   padding: 15px 0;
   background-color: #fff;
   border-bottom: rgba(19, 20, 24, 0.5333333333) 1px solid;
+  z-index: 999;
 }
 
 .navbar {
@@ -2196,7 +2185,7 @@ body.locked {
 @media screen and (max-width: 767.98px) {
   .menu {
     position: fixed;
-    background: #131418;
+    background: #00B9B6;
     left: 0;
     top: 0;
     height: 100vh;
@@ -2314,6 +2303,10 @@ body.locked {
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+
+  .preload {
+    font-size: 30px;
   }
 
   .action__button {
